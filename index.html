@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy 22nd Birthday ❤️</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            font-family: Poppins, sans-serif;
+
+            background:
+                radial-gradient(circle at top, #5c1638, #16000b);
+
+            color: white;
+
+            overflow-x: hidden;
+
+        }
+
+
+        /* FLOATING NAVIGATION */
+
+
+        .nav {
+
+            position: fixed;
+
+            right: 30px;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 20px;
+
+            z-index: 999;
+
+        }
+
+
+
+        .nav a {
+
+            width: 55px;
+
+            height: 55px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+
+                rgba(255, 255, 255, .15);
+
+            backdrop-filter: blur(15px);
+
+            text-decoration: none;
+
+            font-size: 25px;
+
+            color: white;
+
+            transition: .4s;
+
+        }
+
+
+        .nav a:hover {
+
+            background: #ff8fab;
+
+            transform: scale(1.3) rotate(15deg);
+
+        }
+
+
+
+
+
+        /* MUSIC */
+
+
+        .music {
+
+            position: fixed;
+
+            left: 25px;
+
+            bottom: 25px;
+
+            width: 60px;
+
+            height: 60px;
+
+            border-radius: 50%;
+
+            border: none;
+
+            background: #ff8fab;
+
+            font-size: 25px;
+
+            cursor: pointer;
+
+            z-index: 1000;
+
+        }
+
+
+
+
+
+        section {
+
+            min-height: 100vh;
+
+            padding: 80px 10%;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-direction: column;
+
+            text-align: center;
+
+        }
+
+
+
+
+        /* HERO */
+
+
+        .hero {
+
+
+            background:
+
+                linear-gradient(rgba(0, 0, 0, .3),
+                    rgba(0, 0, 0, .6));
+
+
+        }
+
+
+        .hero h1 {
+
+
+            font-family: "Great Vibes";
+
+            font-size: 100px;
+
+            color: #ffd6e0;
+
+            animation: fadeDown 2s;
+
+
+        }
+
+
+        .hero h2 {
+
+            font-size: 35px;
+
+            margin: 20px;
+
+        }
+
+
+        .hero p {
+
+            font-size: 20px;
+
+        }
+
+
+
+        button {
+
+            margin-top: 30px;
+
+            padding: 15px 40px;
+
+            border-radius: 50px;
+
+            border: none;
+
+            background: #ff8fab;
+
+            color: white;
+
+            font-size: 18px;
+
+            cursor: pointer;
+
+            transition: .4s;
+
+        }
+
+
+
+        button:hover {
+
+            transform: scale(1.1);
+
+        }
+
+
+
+
+        .gift {
+
+            display: none;
+
+            margin-top: 40px;
+
+            padding: 40px;
+
+            border-radius: 30px;
+
+            background:
+
+                rgba(255, 255, 255, .15);
+
+            backdrop-filter: blur(20px);
+
+            animation: appear 1s;
+
+        }
+
+
+
+        .title {
+
+            font-family: "Great Vibes";
+
+            font-size: 80px;
+
+            color: #ffd6e0;
+
+            margin-bottom: 50px;
+
+        }
+
+
+
+
+
+        /* STORY */
+
+
+        .timeline {
+
+            max-width: 800px;
+
+        }
+
+
+
+        .card {
+
+            margin: 25px;
+
+            padding: 35px;
+
+            background:
+
+                rgba(255, 255, 255, .1);
+
+            border-radius: 25px;
+
+            backdrop-filter: blur(15px);
+
+            transition: .5s;
+
+        }
+
+
+
+        .card:hover {
+
+            transform: translateX(30px);
+
+            background:
+
+                rgba(255, 143, 171, .3);
+
+        }
+
+
+
+
+
+        /* GALLERY */
+
+
+        .gallery {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 30px;
+
+        }
+
+
+
+        .gallery img {
+
+
+            width: 320px;
+
+            height: 320px;
+
+            object-fit: cover;
+
+            border-radius: 30px;
+
+            box-shadow: 0 20px 50px black;
+
+            transition: .5s;
+
+
+        }
+
+
+
+        .gallery img:hover {
+
+            transform:
+
+                scale(1.1) rotate(5deg);
+
+        }
+
+
+
+
+
+        /* LETTER */
+
+
+        .letter {
+
+            max-width: 850px;
+
+            padding: 50px;
+
+            border-radius: 35px;
+
+            background:
+
+                rgba(255, 255, 255, .1);
+
+            backdrop-filter: blur(20px);
+
+            font-size: 22px;
+
+            line-height: 2;
+
+            min-height: 350px;
+
+        }
+
+
+
+
+
+        /* END */
+
+
+        .end h1 {
+
+            font-family: "Great Vibes";
+
+            font-size: 90px;
+
+        }
+
+
+
+        .cake {
+
+            font-size: 100px;
+
+            animation: bounce 2s infinite;
+
+        }
+
+
+
+
+
+
+        /* PARTICLES */
+
+
+        .star {
+
+            position: fixed;
+
+            width: 5px;
+
+            height: 5px;
+
+            background: white;
+
+            border-radius: 50%;
+
+            animation: blink 3s infinite;
+
+        }
+
+
+
+        .heart {
+
+            position: fixed;
+
+            font-size: 25px;
+
+            pointer-events: none;
+
+            animation: heart 2s forwards;
+
+        }
+
+
+
+
+
+        @keyframes heart {
+
+            to {
+
+                transform:
+
+                    translateY(-120px) scale(2);
+
+                opacity: 0;
+
+            }
+
+        }
+
+
+        @keyframes blink {
+
+            50% {
+
+                opacity: .2;
+
+            }
+
+        }
+
+
+        @keyframes bounce {
+
+
+            50% {
+
+                transform: translateY(-30px);
+
+            }
+
+        }
+
+
+        @keyframes appear {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(50px);
+
+            }
+
+
+        }
+
+
+
+        @keyframes fadeDown {
+
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(-50px);
+
+            }
+
+
+        }
+
+
+
+
+        @media(max-width:700px) {
+
+
+            .hero h1 {
+
+                font-size: 60px;
+
+            }
+
+
+
+            .title {
+
+                font-size: 55px;
+
+            }
+
+
+
+            .gallery {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+
+            .gallery img {
+
+                width: 280px;
+
+                height: 280px;
+
+            }
+
+
+
+            .nav {
+
+                right: 10px;
+
+            }
+
+
+        }
+    </style>
+
+</head>
+
+
+
+
+<body>
+
+
+
+    <audio id="song" loop>
+        <source src="seenkingdeep.mp3" type="audio/mp3">
+    </audio>
+
+
+    <button class="music" onclick="music()">
+        🎵
+    </button>
+
+
+
+
+
+    <div class="nav">
+
+        <a href="#home">❤️</a>
+
+        <a href="#story">✨</a>
+
+        <a href="#gallery">📸</a>
+
+        <a href="#letter">💌</a>
+
+        <a href="#end">🎂</a>
+
+    </div>
+
+
+
+
+
+
+
+    <section id="home" class="hero">
+
+
+        <h1>
+            Happy 22nd Birthday
+        </h1>
+
+
+        <h2>
+            My Beautiful Love ❤️
+        </h2>
+
+
+        <p>
+            Dannielle Joyce Razo
+        </p>
+
+
+        <button onclick="gift()">
+
+            Open Your Surprise 🎁
+
+        </button>
+
+
+
+        <div class="gift" id="gift">
+
+
+            <h2>
+                I love you love!
+            </h2>
+
+            <p>
+                Happy Birthday baby ko!!!!!
+            </p>
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="story">
+
+
+        <h1 class="title">
+
+            Our Story
+
+        </h1>
+
+
+        <div class="timeline">
+
+
+            <div class="card">
+
+                <h2>
+                    The Beginning
+                </h2>
+
+                <p>
+                    The moment I met you became one of the best days of my life.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h2>
+                    Our Memories
+                </h2>
+
+                <p>
+                    Every laugh, every moment with you,every kilig moments with you.
+                </p>
+
+            </div>
+
+
+
+
+            <div class="card">
+
+                <h2>
+                    My Promise
+                </h2>
+
+                <p>
+                    I will continue supporting your dreams and making memories with you.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <section id="gallery">
+
+
+        <h1 class="title">
+
+            Our Photos
+
+        </h1>
+
+
+        <div class="gallery">
+
+
+            <img src="pic1.jpg">
+
+            <img src="pic4.jpg">
+
+            <img src="pic3.jpg">
+
+            <img src="pic2.jpg">
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <section id="letter">
+
+
+        <h1 class="title">
+
+            My Letter
+
+        </h1>
+
+
+
+        <div class="letter">
+
+
+            <p id="text"></p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <section id="end" class="end">
+
+
+        <h1>
+
+            Happy Birthday My Love ❤️
+
+        </h1>
+
+
+        <p>
+
+            May your 22nd year be full of happiness, success and dreams.
+
+        </p>
+
+
+        <div class="cake">
+
+            🎂
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <script>
+
+
+        // MUSIC
+
+
+        let audio = document.getElementById("song");
+
+
+        function music() {
+
+            if (audio.paused) {
+
+                audio.play();
+
+                document.querySelector(".music").innerHTML = "⏸️";
+
+            }
+
+            else {
+
+                audio.pause();
+
+                document.querySelector(".music").innerHTML = "🎵";
+
+            }
+
+        }
+
+
+
+
+
+        // GIFT
+
+
+        function gift() {
+
+
+            document.getElementById("gift").style.display = "block";
+
+
+            fireworks();
+
+
+        }
+
+
+
+
+
+
+
+        // LETTER
+
+
+        let message = `
+
+My Love ❤️
+
+
+Happy 22nd Birthday.
+
+
+Haha sorry ito lang gift ko sayo baby ko.
+
+
+This is not worth a hundreds but
+Lagi kang asa prayers ko
+ikaw ang kalahti ko 
+always remember na 
+
+
+Andito lang ako for you
+
+
+Mahal na mahak kita.
+
+Sabay tayo mag su-surrender 
+
+at mag pupuri sa Lord
+
+
+I love you forever ❤️
+
+
+`;
+
+
+
+        let i = 0;
+
+
+        function typing() {
+
+
+            if (i < message.length) {
+
+
+                document.getElementById("text").innerHTML += message.charAt(i);
+
+                i++;
+
+                setTimeout(typing, 40);
+
+
+            }
+
+
+        }
+
+
+
+        typing();
+
+
+
+
+
+
+
+        // HEART CLICK EFFECT
+
+
+        document.onclick = function (e) {
+
+
+            let h = document.createElement("div");
+
+            h.className = "heart";
+
+            h.innerHTML = "❤️";
+
+
+            h.style.left = e.clientX + "px";
+
+            h.style.top = e.clientY + "px";
+
+
+            document.body.appendChild(h);
+
+
+
+            setTimeout(() => {
+
+
+                h.remove();
+
+
+            }, 2000);
+
+
+
+        };
+
+
+
+
+
+
+
+
+        // FIREWORKS
+
+
+        function fireworks() {
+
+
+            for (let x = 0; x < 80; x++) {
+
+
+                let h = document.createElement("div");
+
+                h.innerHTML = "❤️";
+
+
+                h.style.position = "fixed";
+
+                h.style.left = Math.random() * 100 + "vw";
+
+                h.style.top = "-20px";
+
+
+                h.style.fontSize = "25px";
+
+                h.style.animation = "heart 3s";
+
+
+                document.body.appendChild(h);
+
+
+
+                setTimeout(() => h.remove(), 3000);
+
+
+            }
+
+
+        }
+
+
+
+
+
+
+        // CREATE STARS
+
+
+        for (let i = 0; i < 100; i++) {
+
+
+            let s = document.createElement("div");
+
+
+            s.className = "star";
+
+
+            s.style.left = Math.random() * 100 + "vw";
+
+            s.style.top = Math.random() * 100 + "vh";
+
+
+            document.body.appendChild(s);
+
+
+        }
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
